@@ -1,6 +1,6 @@
 //
-// Copyright (c) 2012 Leifos GmbH, GPL2, see docs/LICENSE
-//
+// Copyright (c) 2016 IZUS/TIK, Universität Stuttgart
+// GPLv3, see gpl-3.0.txt
 
 <!-- language file start -->
 cmd_insert#:#Insert JSXGraph Element

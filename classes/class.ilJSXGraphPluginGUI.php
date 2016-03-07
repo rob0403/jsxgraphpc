@@ -1,5 +1,9 @@
 <?php
- 
+/**
+ * Copyright (c) 2016 IZUS/TIK, Universität Stuttgart
+ * GPLv3, see gpl-3.0.txt
+ */
+
 include_once("./Services/COPage/classes/class.ilPageComponentPluginGUI.php");
  
 /**
