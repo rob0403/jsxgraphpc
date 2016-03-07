@@ -1,0 +1,15 @@
+//
+// Copyright (c) 2012 Leifos GmbH, GPL2, see docs/LICENSE
+//
+
+<!-- language file start -->
+cmd_insert#:#JSXGraph einfügen
+edit_ex_el#:#JSXGraph editieren
+content_plugin_version#:#Content last edited with version
+mode#:#Mode
+property#:#Einstellungen
+settings_1#:#Graph bearbeiten
+width#:#Graph Breite
+height#:#Graph Höhe
+jsxcode#:#Code für den Graph
+runcode#:#Code ausführen
