@@ -131,7 +131,7 @@ class ilJSXGraphPluginGUI extends ilPageComponentPluginGUI
          */
         public function initForm($a_create = false)
         {
-                global $lng, $ilCtrl, $ilLog, $tpl;
+                global $lng, $ilCtrl,  $tpl;
  
                 include_once("Services/Form/classes/class.ilPropertyFormGUI.php");
                 $form = new ilPropertyFormGUI();
@@ -165,7 +165,6 @@ class ilJSXGraphPluginGUI extends ilPageComponentPluginGUI
 		}
 		
 		$acehtml = $edittpl->get();
-                $ilLog->write($acehtml);
 		$v1 = new ilCustomInputGUI($this->getPlugin()->txt("jsxcode"));
 		$v1->setHTML($acehtml);
 		$form->addItem($v1);
@@ -214,11 +213,9 @@ class ilJSXGraphPluginGUI extends ilPageComponentPluginGUI
          */
         function getElementHTML($a_mode, array $a_properties, $a_plugin_version)
         {
-		global $ilLog;
                 $pl = $this->getPlugin();
                 $tpl = $pl->getTemplate("tpl.content.html");
 #                $tpl->setVariable("JSXCODE", str_replace("&#13;","",$a_properties["jsxcode"]));
-		$ilLog->write($a_properties["jsxcode"]);
                 $tpl->setVariable("JSXCODE", html_entity_decode($a_properties["jsxcode"]));
                 $tpl->setVariable("HEIGHT", $a_properties["height"]);
                 $tpl->setVariable("WIDTH", $a_properties["width"]);
