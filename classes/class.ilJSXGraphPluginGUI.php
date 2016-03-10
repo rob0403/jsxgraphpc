@@ -163,7 +163,7 @@ class ilJSXGraphPluginGUI extends ilPageComponentPluginGUI
 		} else {
 		        $uniqid = uniqid("jsxgraphbox");
 		        $edittpl->setVariable("GRAPHBOX",$uniqid);
-			$edittpl->setVariable("JSXCODE","var brd = JXG.JSXGraph.initBoard('".$uniqid."', {boundingbox: [-2, 2, 2, -2]})");
+			$edittpl->setVariable("JSXCODE","var brd = JXG.JSXGraph.initBoard('".$uniqid."', {boundingbox: [-2, 2, 2, -2]});");
                 	$edittpl->setVariable("HEIGHT", "500");
 	                $edittpl->setVariable("WIDTH", "500");
 		}
