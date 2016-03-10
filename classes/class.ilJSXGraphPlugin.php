@@ -59,4 +59,3 @@ class ilJSXGraphPlugin extends ilPageComponentPlugin
 }
  
 ?>
-
