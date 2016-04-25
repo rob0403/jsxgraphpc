@@ -1,61 +1,58 @@
 <?php
+
 /**
  * Copyright (c) 2016 IZUS/TIK, Universität Stuttgart
- * GPLv3, see gpl-3.0.txt
+ * GPLv3, see gpl-3.0.txt.
  */
- 
-include_once("./Services/COPage/classes/class.ilPageComponentPlugin.php");
- 
+
+include_once './Services/COPage/classes/class.ilPageComponentPlugin.php';
+
 /**
- * JSXGraph user interface plugin
+ * JSXGraph user interface plugin.
  *
  * @author Per Pascal Grube <pascal.grube@tik.uni-stuttgart.de>
- * @version $Id$
  *
+ * @version $Id$
  */
 class ilJSXGraphPlugin extends ilPageComponentPlugin
 {
         /**
-         * Get plugin name 
+         * Get plugin name.
          *
          * @return string
          */
-        function getPluginName()
+        public function getPluginName()
         {
-                return "JSXGraph";
+            return 'JSXGraph';
         }
-        
-        
+
         /**
-         * Get plugin name 
+         * Get plugin name.
          *
          * @return string
          */
-        function isValidParentType($a_parent_type)
+        public function isValidParentType($a_parent_type)
         {
-                if (in_array($a_parent_type, array("lm", "wpg", "qpl", "qfbg", "qfbs", "qht")))
-                {
-                        return true;
-                }
-                return false;
+            if (in_array($a_parent_type, array('lm', 'wpg', 'qpl', 'qfbg', 'qfbs', 'qht'))) {
+                return true;
+            }
+
+            return false;
         }
-        
+
         /**
-         * Get Javascript files
+         * Get Javascript files.
          */
-        function getJavascriptFiles()
+        public function getJavascriptFiles()
         {
-                return array("js/jsxgraphcore.js");
+            return array('js/jsxgraphcore.js');
         }
-        
+
         /**
-         * Get css files
+         * Get css files.
          */
-        function getCssFiles()
+        public function getCssFiles()
         {
-                return array("css/jsxgraph.css");
+            return array('css/jsxgraph.css');
         }
- 
 }
- 
-?>
