@@ -43,7 +43,7 @@ class ilJSXGraphPlugin extends ilPageComponentPlugin
         /**
          * Get Javascript files.
          */
-        public function getJavascriptFiles()
+        public function getJavascriptFiles($a_mode)
         {
             return array('js/jsxgraphcore.js');
         }
@@ -51,7 +51,7 @@ class ilJSXGraphPlugin extends ilPageComponentPlugin
         /**
          * Get css files.
          */
-        public function getCssFiles()
+        public function getCssFiles($a_mode)
         {
             return array('css/jsxgraph.css');
         }
