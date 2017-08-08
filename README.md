@@ -1,5 +1,5 @@
 # JSXGraph
-Page Component Plugin for ILIAS 5.1.x
+Page Component Plugin for ILIAS 5.1.x and 5.2.x
 
 ### Page Component that allows interactive geometry, plotting and visualization  ###
 
